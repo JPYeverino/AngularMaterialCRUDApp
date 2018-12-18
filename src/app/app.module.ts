@@ -15,6 +15,7 @@ import { EmployeeService } from './shared/employee.service';
 import { environment } from '../environments/environment';
 import { DepartmentService } from './shared/department.service';
 import { EmployeeListComponent } from './employees/employee-list/employee-list.component';
+import { MatConfrimDialogComponent } from './mat-confrim-dialog/mat-confrim-dialog.component';
 
 
 
@@ -24,7 +25,8 @@ import { EmployeeListComponent } from './employees/employee-list/employee-list.c
     AppComponent,
     EmployeesComponent,
     EmployeeComponent,
-    EmployeeListComponent
+    EmployeeListComponent,
+    MatConfrimDialogComponent
   ],
   imports: [
     BrowserModule,
