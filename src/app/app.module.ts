@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { MaterialModule } from './material/material.module';
 import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
+import { DatePipe } from '@angular/common';
 
 
 import { AppRoutingModule } from './app-routing.module';
@@ -39,8 +40,8 @@ import { MatConfrimDialogComponent } from './mat-confrim-dialog/mat-confrim-dial
     AngularFireModule.initializeApp(environment.firebaseConfig)
 
   ],
-  providers: [EmployeeService, DepartmentService],
+  providers: [EmployeeService, DepartmentService, DatePipe],
   bootstrap: [AppComponent],
-  entryComponents: [EmployeeComponent]
+  entryComponents: [EmployeeComponent, MatConfrimDialogComponent]
 })
 export class AppModule { }
